@@ -22,7 +22,7 @@
         <input>
         <![CDATA[
        
-public static class FinalPrice {
+public class FinalPrice {
   public static void printDiscount(String itemType, double originalPrice, boolean hasSpecialOffer) {  
     double standardDiscount = 0.15;
 	double bulkDiscount = 0.25;
@@ -61,7 +61,7 @@ public static class FinalPrice {
     <program label="exp-unique-refactoringFinalPrice-code" interactive="activecode" language="java" >
       <input>  <![CDATA[
         
-public static class FinalPrice {
+public class FinalPrice {
   public static void printDiscount(String itemType, double originalPrice, boolean hasSpecialOffer) {  
     double standardDiscount = 0.15;
 	double bulkDiscount = 0.25;
@@ -138,7 +138,7 @@ public static class FinalPrice {
             String output = getMethodOutput("printDiscount", args);
             //System.out.println(output);
             String expectedMessage = "Item: clothes, Original Price: $500.0. Bulk discount applied. Discounted Price: $375.0";
-               boolean passed = getResults(expectedMessage, output.trim(), "printDiscount(\"clothes\", 500.0, true)");
+               boolean passed = getResults(expectedMessage, output.trim(), "printDiscount(\"clothes\", 500.0, false)");
                
                assertTrue(passed);
 
