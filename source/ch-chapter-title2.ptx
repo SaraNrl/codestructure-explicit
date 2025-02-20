@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-chapter-title2" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Chapter 2</title>
+  <title> Do the tasks in order</title>
 	<introduction>
-    <p> TESTText before the first section. </p>
+    <p> </p>
   </introduction>
   
   <!--xi:include href="test.ptx" /-->
