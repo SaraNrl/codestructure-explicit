@@ -3,7 +3,7 @@
 <chapter xml:id="ch-chapter-title2" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title> Do the tasks in order</title>
 	<introduction>
-    <p> </p>
+    <p> Please study all sections in order as they are built</p>
   </introduction>
   
   <!--xi:include href="test.ptx" /-->
