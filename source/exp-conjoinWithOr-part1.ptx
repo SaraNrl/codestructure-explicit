@@ -5,11 +5,11 @@
 
   <title>Rule 1) Conjoining Conditions </title>
   <p>
-  Please watch the video to learn when to conjoin conditions with || and answer the following question in the checkpoint. 
+  Please watch the video to learn when to conjoin conditions with || and answer the following questions. 
   </p>
   <figure>
     <caption>Conjoining conditions with <c>||</c> part 1</caption>
-    <video xml:id="conjoinWithOr1" youtube="PKlkwZRBUfI" width="90%" margins="5% 5%" preview="conjoinWithOr-part1" />
+    <video xml:id="conjoinWithOr1" youtube="q1nCbQieB00" width="90%" margins="5% 5%" preview="conjoinWithOr-part1" />
   </figure>
  
  
@@ -39,13 +39,18 @@ public static void print(int x, int y, int z) {
       <statement> 
         <p>The code first prints "Condition met" and then it prints "End of program" </p>
       </statement> 
+       <feedback>
+      Think about what you learned for short circuit evaluation from the video
+      </feedback>
     </choice>
   
     <choice correct="no">
       <statement> 
         The code only prints "End of program" 
       </statement>
-
+     <feedback>
+      Think about what you learned for short circuit evaluation from the video
+      </feedback>
     </choice>
     
     <choice correct="yes">
@@ -71,13 +76,19 @@ public static void print(int x, int y, int z) {
     <choice correct="yes">
       <statement> 
         <p>The code first prints "Condition met" and then it prints "End of program" </p>
-      </statement> 
+      </statement>
+       <feedback>
+      Correct! The first condition is true, the program doesn't bother checking the rest of the conjoined conditions and considers the whole as true.  
+      </feedback> 
     </choice>
     
     <choice correct="no">
       <statement> 
         The code only prints "End of program" 
       </statement>
+       <feedback>
+     The body of the if statement has a print statement, so the execution continues and the last line will also be printed.
+      </feedback>
     </choice>
     
     <choice correct="no">

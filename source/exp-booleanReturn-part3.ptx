@@ -5,143 +5,16 @@
 
   <title>Rule 2) Directly return boolean expressions </title>
   <p>
-  Continue watching the video to learn the first rule and answer the following questions.
+  Continue watching to learn about the second rule and answer the following questions.
   </p>
   <figure>
-    <caption>Conjoining conditions with <c>||</c> part 3</caption>
+    <caption>Directly return boolean expressions part 3</caption>
     <video xml:id="booleanReturn3" youtube="EQD5ZuL7oMA" width="90%" margins="5% 5%" preview="booleanReturn-part3"/>
   </figure>
  
  
  
- <activity label="exp-booleanReturn-comprehensionIsHighImpact"> 
-  <statement>
-    <p>
-      Determine which of the following code blocks have the same functionality as the given code block (i.e., they produce the same output for any input). Please check the hints after answering the questions.
-    </p>
-    <program language="java">
-      <input>
-public static boolean isHighImpact(boolean isPeerReviewed, String journalName, int citationCount) {
-    if (isPeerReviewed) {  
-        if (isWellKnownJournal(journalName)) { 
-            if (citationCount > 50) { 
-                return true;
-            }
-        }
-    }
-    return false;
-}
-
-      </input>  
-    </program>
-    
-  
-  	<p>
-      Select all that apply. 
-    </p> 
-  </statement>
-
-
-  <choices>
-  
-    <choice correct="yes">
-      <statement> 
-       <program language="java">
-          <input>
-public static boolean isHighImpact(boolean isPeerReviewed, String journalName, int citationCount) {
-    if (!isPeerReviewed) {
-        return false;
-    }  
-    if (!isWellKnownJournal(journalName)) {
-        return false;
-    }
-    if (citationCount &lt;= 50) { 
-        return false;               
-    }               
-    return true;
-}
-
-          </input>
-        </program>
-      </statement>
-      <feedback>
-        <p>
-            Code block in option A do the same thing as the given code block!
-        </p>
-      </feedback>
-    </choice>
-
-    <choice correct="yes">
-      <statement> 
-       <program language="java">
-          <input>
-public static boolean isHighImpact(boolean isPeerReviewed, String journalName, int citationCount) {
-    if (isPeerReviewed &amp;&amp; isWellKnownJournal(journalName) &amp;&amp; citationCount > 50) { 
-       return true;
-    }
-    return false;
-}
-          </input>
-        </program>
-      </statement>
-      <feedback>
-        <p>
-            Code block in option B does the same thing as the given code block
-        </p>
-      </feedback>
-    </choice>
-
-    <choice correct="yes">
-      <statement> 
-       <program language="java">
-          <input>
-           <![CDATA[
-public static boolean isHighImpact(boolean isPeerReviewed, String journalName, int citationCount) {
-    if (!isPeerReviewed || !isWellKnownJournal(journalName) || citationCount <= 50) { 
-        return false;               
-    } else {               
-        return true; 
-    }
-}
-
-
-]]>
-          </input>
-        </program>
-      </statement>
-      <feedback>
-        <p>
-            Code block in option C do the same thing as the given code block
-        </p>
-      </feedback>
-    </choice>
-
  
- <choice correct="yes">
-      <statement> 
-       <program language="java">
-          <input>
-           <![CDATA[
-public static boolean isHighImpact(boolean isPeerReviewed, String journalName, int citationCount) {
-    return isPeerReviewed && isWellKnownJournal(journalName) && citationCount > 50;
-}
-
-
-]]>
-          </input>
-        </program>
-      </statement>
-      <feedback>
-        <p>
-            Code block in option D do the same thing as the given code block, but is also well-structured!
-        </p>
-      </feedback>
-    </choice>
-    
-  </choices>
-</activity>
-
-
 
 
  <activity label="exp-booleanReturn-comprehensionNegation"> 
@@ -195,7 +68,7 @@ public static boolean isHighImpact(boolean isPeerReviewed, String journalName, i
        <program language="java">
           <input>
            <![CDATA[
-(!isPeerReviewed || hIndex > 3) &amp;&amp; citation > 50 
+(!isPeerReviewed || hIndex > 3) && citation > 50 
 
 
 ]]>
@@ -204,16 +77,144 @@ public static boolean isHighImpact(boolean isPeerReviewed, String journalName, i
       </statement>
       <feedback>
         <p>
-            Read the explanation in option 2.
+            Read the feedback explanation for option 2.
+        </p>
+      </feedback>
+    </choice>
+
+  </choices>
+</activity>
+
+
+
+<activity label="exp-booleanReturn-comprehensionIsHighImpact"> 
+  <statement>
+    <p>
+      Determine which of the following code blocks have the same functionality as the given code block (i.e., they produce the same output for any input). Please check the hints after answering the questions.
+    </p>
+    <program language="java">
+      <input>
+public static boolean isHighImpact(boolean isPeerReviewed, String journalName, int citationCount) {
+    if (isPeerReviewed) {  
+        if (isWellKnownJournal(journalName)) { 
+            if (citationCount > 50) { 
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+      </input>  
+    </program>
+    
+  
+  	<p>
+      Select all that apply. 
+    </p> 
+  </statement>
+
+
+  <choices>
+  
+    <choice correct="yes">
+      <statement> 
+       <program language="java">
+          <input>
+public static boolean isHighImpact(boolean isPeerReviewed, String journalName, int citationCount) {
+    if (!isPeerReviewed) {
+        return false;
+    }  
+    if (!isWellKnownJournal(journalName)) {
+        return false;
+    }
+    if (citationCount &lt;= 50) { 
+        return false;               
+    }               
+    return true;
+}
+
+          </input>
+        </program>
+      </statement>
+      <feedback>
+        <p>
+            Correct! This code is has the same functionality with the given code block. Use the truth table to ensure. 
+        </p>
+      </feedback>
+    </choice>
+
+    <choice correct="yes">
+      <statement> 
+       <program language="java">
+          <input>
+public static boolean isHighImpact(boolean isPeerReviewed, String journalName, int citationCount) {
+    if (isPeerReviewed &amp;&amp; isWellKnownJournal(journalName) &amp;&amp; citationCount > 50) { 
+       return true;
+    }
+    return false;
+}
+          </input>
+        </program>
+      </statement>
+      <feedback>
+        <p>
+            Correct! This is the pattern for the first rule, nested <c>if</c> statements that can be conjoined with <c>&amp;&amp;</c>.
+        </p>
+      </feedback>
+    </choice>
+
+    <choice correct="yes">
+      <statement> 
+       <program language="java">
+          <input>
+           <![CDATA[
+public static boolean isHighImpact(boolean isPeerReviewed, String journalName, int citationCount) {
+    if (!isPeerReviewed || !isWellKnownJournal(journalName) || citationCount <= 50) { 
+        return false;               
+    } else {               
+        return true; 
+    }
+}
+
+
+]]>
+          </input>
+        </program>
+      </statement>
+      <feedback>
+        <p>
+            Correct! The <c>if</c> condition returns <c>false</c>, so, if we negate the condition, <c>if</c> body returns <c>true</c> and <c>else </c>returns <c>false</c>; same as the code in option B.
         </p>
       </feedback>
     </choice>
 
  
+ <choice correct="yes">
+      <statement> 
+       <program language="java">
+          <input>
+           <![CDATA[
+public static boolean isHighImpact(boolean isPeerReviewed, String journalName, int citationCount) {
+    return isPeerReviewed && isWellKnownJournal(journalName) && citationCount > 50;
+}
 
+
+]]>
+          </input>
+        </program>
+      </statement>
+      <feedback>
+        <p>
+            Correct! This code has the same functionality as option B but it is well-structured as it directly returns the condition. 
+        </p>
+      </feedback>
+    </choice>
     
   </choices>
 </activity>
+
+
 
 
 

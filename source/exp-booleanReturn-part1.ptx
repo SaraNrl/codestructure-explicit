@@ -5,7 +5,7 @@
 
   <title>Rule 2) Directly return boolean expressions </title>
   <p>
-  Please watch the video to learn the second rule and answer the following checkpoint question.
+  Please watch the video to learn about the second rule (directly return boolean conditions) and answer the following question. Enlarge the window to view the code examples clearly. If needed, click the settings icon in the video player and set the quality to 1080p for better clarity.
   </p>
   <figure>
     <caption>Directly return boolean expressions part 1</caption>
@@ -17,7 +17,7 @@
  <exercise label="exp-BooleanReturn-fillinAreEqualStrings">
 
     <statement>
-      <p> Fill in the blank line of code, so that the function areStringsEqual() takes two string of str1 and str2. When <term role="bold"> the two strings are the same </term> it returns true and returns false otherwise.  
+      <p> The function areStringsEqual() takes two Strings (str1 and str2). Complete the function so that when <term role="bold"> the two Strings are the same </term> it returns true and returns false otherwise. You should use equals() method to compare two String values.  
        </p>
     
 		<program language="java" >

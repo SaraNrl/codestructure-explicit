@@ -5,21 +5,81 @@
 
   <title>Rule 3) Remove repeated code and logic from conditional branches </title>
   <p>
-  Please watch the video to learn the first rule and answer the following questions. Enlarge the window to view the code examples clearly. If needed, click the settings icon in the video player and set the quality to 1080p for better clarity.
+  Please watch the video to learn about the third rule (remove repeated code from conditional branches) and answer the following questions. Enlarge the window to view the code examples clearly. If needed, click the settings icon in the video player and set the quality to 1080p for better clarity.
   </p>
   <figure>
     <caption>Remove repeated code from branches part 1 </caption>
     <video xml:id="uniqueRepeated1" youtube="leWATGkAWaU" width="90%" margins="5% 5%" preview="uniqueRepeated-part1"/>
   </figure>
- 
- 
- 
- 
 
 
 
 
+
+
+<activity label="exp-uniqueRepeated1-videoCheckPoint"> 
+  <statement>
+    <p>
+      For the code example that was discussed in the video, applying which of the following rule(s) resulted in removing the repeated code from conditional branches?
+    </p>
+    
+
+  
+  	<p>
+      Select all that apply. 
+    </p> 
+  </statement>
+
+
+  <choices>
+  
+    <choice correct="no">
+      <statement> 
+       Conjoining conditions with &amp;&amp; operator
+      </statement>
+      <feedback>
+        <p>
+			No. Please watch the video carefully.
+        </p>
+      </feedback>
+    </choice>
+
+    <choice correct="yes">
+      <statement> 
+       Conjoining conditions with || operator
+      </statement>
+      <feedback>
+        <p>
+            Correct!
+        </p>
+      </feedback>
+    </choice>
+
+    <choice correct="no">
+      <statement> 
+       Directly returning boolean conditions
+      </statement>
+      <feedback>
+        <p>
+			No. Please watch the video carefully.
+        </p>
+      </feedback>
+    </choice>
+
+ 
+ <choice correct="no">
+      <statement> 
+      We could not apply any of the rules we learned so far.  
+      </statement>
+      <feedback>
+        <p>
+           No. Please watch the video carefully. 
+        </p>
+      </feedback>
+    </choice>
+    
+  </choices>
+</activity>
 
 
 </section>
-

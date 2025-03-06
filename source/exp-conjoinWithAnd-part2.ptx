@@ -38,7 +38,10 @@ public static void print(int x, int y, int z) {
     <choice correct="no">
       <statement> 
         <p>The code first prints "Condition met" and then it prints "End of program" </p>
-      </statement> 
+      </statement>
+      <feedback>
+        <p>Since the first condition is false, the if condition is false and the program skips its body.</p>
+        </feedback>
     </choice>
   
     <choice correct="yes">
@@ -54,12 +57,16 @@ public static void print(int x, int y, int z) {
       <statement> 
         <p>The code throws an error for division by zero</p>
       </statement> 
+      <feedback>
+       <p>Since the first condition is false, the program does't bother checking the rest of conjoined conditions and it evaluates the if condition as false.</p>
+       </feedback>
     </choice>
     
     <choice correct="no">
       <statement> 
         <p>Nothing will be printed</p>
       </statement> 
+      
     </choice>
   </choices>
 </activity>
@@ -76,6 +83,11 @@ public static void print(int x, int y, int z) {
       <statement> 
         <p>The code first prints "Condition met" and then it prints "End of program" </p>
       </statement> 
+      <feedback>
+      <p>
+      Based on short circuit evaluation, the first condition is true, and the second one will be checked. The second condition will lead to an error. 
+      </p>
+      </feedback>
     </choice>
     
     <choice correct="no">

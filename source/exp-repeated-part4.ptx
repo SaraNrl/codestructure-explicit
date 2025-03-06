@@ -5,7 +5,7 @@
 
   <title>Rule 3) Remove repeated code and logic from conditional branches </title>
   <p>
-   Please watch the video to learn the third rule and complete the activities. 
+   Continue watching to learn about the third rule and complete the activities. 
   </p>
   <figure>
     <caption>Remove repeated code from branches part 4</caption>
@@ -25,7 +25,7 @@
 public class FinalPrice {
   public static void printDiscount(String itemType, double originalPrice, boolean hasSpecialOffer) {  
     double standardDiscount = 0.15;
-	double bulkDiscount = 0.25;
+	double highValueDiscount = 0.25;
 	double vipDiscount = 0.5;
 	String introMessage = "Item: " + itemType + ", Original Price: $" + originalPrice + ". ";
 	String finalMessage = "Discounted Price: $";
@@ -38,8 +38,8 @@ public class FinalPrice {
 		System.out.println(message);
 	} else if (originalPrice > 200) {
 		String message = introMessage;
-		message += "Bulk discount applied. " + finalMessage;
-		double discountedPrice = originalPrice * (1 - bulkDiscount);
+		message += "High-value purchase discount applied! " + finalMessage;
+		double discountedPrice = originalPrice * (1 - highValueDiscount);
 		message += discountedPrice;
 		System.out.println(message);
     } else {
@@ -64,8 +64,9 @@ public class FinalPrice {
 public class FinalPrice {
   public static void printDiscount(String itemType, double originalPrice, boolean hasSpecialOffer) {  
     double standardDiscount = 0.15;
-	double bulkDiscount = 0.25;
+	double highValueDiscount = 0.25;
 	double vipDiscount = 0.5;
+	
 	String introMessage = "Item: " + itemType + ", Original Price: $" + originalPrice + ". ";
 	String finalMessage = "Discounted Price: $";
 
@@ -77,8 +78,8 @@ public class FinalPrice {
 		System.out.println(message);
 	} else if (originalPrice > 200) {
 		String message = introMessage;
-		message += "Bulk discount applied. " + finalMessage;
-		double discountedPrice = originalPrice * (1 - bulkDiscount);
+		message += "High-value purchase discount applied! " + finalMessage;
+		double discountedPrice = originalPrice * (1 - highValueDiscount);
 		message += discountedPrice;
 		System.out.println(message);
     } else {
@@ -126,7 +127,7 @@ public class FinalPrice {
             Object[] args = {"clothes", 300.0, true};
             String output = getMethodOutput("printDiscount", args);
             //System.out.println(output);
-            String expectedMessage = "Item: clothes, Original Price: $300.0. Bulk discount applied. Discounted Price: $225.0";
+            String expectedMessage = "Item: clothes, Original Price: $300.0. High-value purchase discount applied!  Discounted Price: $225.0";
                boolean passed = getResults(expectedMessage, output.trim(), "printDiscount(\"clothes\", 300.0, true)");
                
                assertTrue(passed);
@@ -137,7 +138,7 @@ public class FinalPrice {
             Object[] args = {"clothes", 500.0, false};
             String output = getMethodOutput("printDiscount", args);
             //System.out.println(output);
-            String expectedMessage = "Item: clothes, Original Price: $500.0. Bulk discount applied. Discounted Price: $375.0";
+            String expectedMessage = "Item: clothes, Original Price: $500.0. High-value purchase discount applied!  Discounted Price: $375.0";
                boolean passed = getResults(expectedMessage, output.trim(), "printDiscount(\"clothes\", 500.0, false)");
                
                assertTrue(passed);
@@ -169,20 +170,19 @@ public class FinalPrice {
 public class FinalPrice {
   public static void printDiscount(String itemType, double originalPrice, boolean hasSpecialOffer) {  
     double standardDiscount = 0.15;
-    double bulkDiscount = 0.25;
+    double highValueDiscount = 0.25;
     double vipDiscount = 0.5;
     double discountedPrice = 0;
+    
     String introMessage = "Item: " + itemType + ", Original Price: $" + originalPrice + ". ";
     String finalMessage = "Discounted Price: $";
-        
-    
 
     if ("electronics".equals(itemType) && hasSpecialOffer) {
        introMessage += "Special offer applied. "; 
        discountedPrice = originalPrice * (1 - vipDiscount);
     } else if (originalPrice > 200) {
-       introMessage += "Bulk discount applied. ";
-       discountedPrice = originalPrice * (1 - bulkDiscount);
+       introMessage += "High-value purchase discount applied! ";
+       discountedPrice = originalPrice * (1 - highValueDiscount);
     } else {
        discountedPrice = originalPrice * (1 - standardDiscount);
     }   
@@ -209,7 +209,7 @@ public class FinalPrice {
 public class FinalPrice {
     public static void printDiscount(String itemType, double originalPrice, boolean hasSpecialOffer) {  
         double standardDiscount = 0.15;
-        double bulkDiscount = 0.25;
+        double highValueDiscount = 0.25;
         double vipDiscount = 0.5;
         double discountType = 0;
         double finalPrice;
@@ -221,8 +221,8 @@ public class FinalPrice {
             introMessage += "Special offer applied. "; 
             discountType = vipDiscount;
         } else if (originalPrice > 200) {
-            introMessage += "Bulk discount applied. ";
-            discountType = bulkDiscount;
+            introMessage += "High-value purchase discount applied! ";
+            discountType = highValueDiscount;
         } else {
             discountType = standardDiscount;
         }  
@@ -250,18 +250,19 @@ public class FinalPrice {
        <program language="java">
           <input>
 public class FinalPrice {
-    public static void printDiscount(String itemType, double originalPrice, boolean hasSpecialOffer) {  
-        String introMessage = "Item: " + itemType + ", Original Price: $" + originalPrice + ". ";
-        String finalMessage = "Discounted Price: $";
+    public static void printDiscount(String itemType, double originalPrice, boolean hasSpecialOffer) {   
         double discountRate = 0.15;
         String message = "";
+        
+        String introMessage = "Item: " + itemType + ", Original Price: $" + originalPrice + ". ";
+        String finalMessage = "Discounted Price: $";
 
         if ("electronics".equals(itemType) &amp;&amp; hasSpecialOffer) {
             discountRate = 0.5;
             message = "Special offer applied. ";
         } else if (originalPrice > 200) {
             discountRate = 0.25;
-            message = "Bulk discount applied. ";
+            message = "High-value purchase discount applied! ";
         }
 
         double finalPrice = originalPrice * (1 - discountRate);

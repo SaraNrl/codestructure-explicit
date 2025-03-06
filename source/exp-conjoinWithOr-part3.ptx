@@ -11,6 +11,7 @@
     <caption>Conjoining conditions with <c>||</c> part 3</caption>
     <video xml:id="conjoinWithOr3" youtube="hgVU3kO3hQw" width="90%" margins="5% 5%" preview="conjoinWithOr-part3"/>
   </figure>
+
  
  
  
@@ -60,7 +61,7 @@ public static void guessGame2(int number) {
       </statement>
       <feedback>
         <p>
-            Correct! guessGame1(28) prints "Good guess" twice but guessGame2(28) prints "Good guess" only once. 
+            Correct! guessGame1(28) prints "Good guess" twice but guessGame2(28) prints "Good guess" only once! 
         </p>
       </feedback>
     </choice>
@@ -70,7 +71,7 @@ public static void guessGame2(int number) {
         16 
       </statement>
       <feedback>
-		Both guessGame1(16) and guessGame2(16) print "Good guess" once. 
+		Not Correct! Both guessGame1(16) and guessGame2(16) print "Good guess" once. 
       </feedback>
     </choice>
     
@@ -89,12 +90,63 @@ public static void guessGame2(int number) {
         23
       </statement>
       <feedback>
-    Neither guessGame1(23) nor guessGame2(23) prints anything.  
+    Not Correct! Neither guessGame1(23) nor guessGame2(23) prints anything. So for this input both functions have the same bahavior.  
       </feedback>
     </choice>
     </choices>
 
 </activity>
+
+
+ <activity label="video-conjoinWithOr3" >
+ <statement>
+      <p>
+       Which of the following options summarize the main points in the video? 
+     </p>
+
+
+  	<p>
+      Select all that apply. 
+    </p> 
+  </statement>
+
+
+  <choices>
+    <choice correct="yes">
+      <statement> 
+        We can conjoin the conditions of sequential <c>if</c> statements with the same body that includes return statements using <c>||</c>.
+      </statement>
+      <feedback>
+
+             Correct! If the body of <c>if</c> statements involve <c>return</c> statements, regardless of whether conditions are exclusive or not, we can conjoin conditions.  
+
+      </feedback>
+    </choice>
+    
+     <choice correct="yes">
+      <statement> 
+               The functionality and execution of sequential <c>if</c> statements with a body that involves return statements is the same as an <c>if-else if </c>structure.
+      </statement>
+      <feedback>
+        <p>
+             Correct!  
+        </p>
+      </feedback>
+    </choice>
+      <choice correct="no">
+      <statement> 
+               We can conjoin the conditions of sequential <c>if</c> statements with the same body that includes print statements using <c>||</c>.
+      </statement>
+      <feedback>
+        <p>
+             Not always! For example, in the previous activity, when <c>number == 28</c>, conjoining the conditions results in "Good guess" being printed only once, whereas keeping them separate causes "Good guess" to be printed twice.
+        </p>
+       
+      </feedback>
+    </choice>
+   
+         </choices>
+ </activity> 
 
 
 

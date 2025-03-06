@@ -5,7 +5,7 @@
 
   <title>Rule 3) Remove repeated code and logic from conditional branches </title>
   <p>
-   Please watch the video to learn the third rule and answer the question in the checkpoint. 
+   Continue watching to learn about the third rule and answer the following question. 
   </p>
   <figure>
     <caption>Remove repeated code from branches part 3</caption>
@@ -26,7 +26,7 @@
      <statement>
 		<program  language="java">
 		    <input>
-	public void generateOrderSummary(double totalPrice, boolean isMember) {
+	public static void generateOrderSummary(double totalPrice, boolean isMember) {
 		String message = "";
 
 		if (totalPrice > 100) {
@@ -65,7 +65,7 @@
 
 		<program  language="java">
 		    <input>
-	public void generateOrderSummary(double totalPrice, boolean isMember) {
+	public static void generateOrderSummary(double totalPrice, boolean isMember) {
 		String messagePrefix = "";
 		String messageSuffix = "";
 		int points = 0;

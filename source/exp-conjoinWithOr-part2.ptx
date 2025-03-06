@@ -5,7 +5,7 @@
 
   <title>Rule 1) Conjoining Conditions </title>
   <p>
-  Continue watching the video to learn when to conjoin conditions with || and answer the following questions.
+  Continue watching the video to learn when to conjoin conditions with <c>||</c> and answer the following questions.
   </p>
   <figure>
     <caption>Conjoining conditions with <c>||</c> part 2</caption>
@@ -14,13 +14,173 @@
  
  
  
+ <activity label="video-conjoinWithOr2" >
+ <statement>
+      <p>
+       Which of the following options summarize the main points in the video? 
+     </p>
+
+
+  	<p>
+      Select all that apply. 
+    </p> 
+  </statement>
+
+
+  <choices>
+    <choice correct="no">
+      <statement> 
+        We can always conjoin the conditions of sequential <c>if</c> statements with the same body using <c>||</c>.
+      </statement>
+      <feedback>
+
+             No! Not always 
+
+      </feedback>
+    </choice>
+    
+     <choice correct="yes">
+      <statement> 
+               We can conjoin the conditions of sequential <c>if</c> statements with the same body using <c>||</c> when those conditions are exclusive.
+      </statement>
+      <feedback>
+        <p>
+             Correct! 
+        </p>
+      </feedback>
+    </choice>
+    
+    <choice correct="yes">
+      <statement> 
+       Sequential <c>if</c> statements with mutually exclusive conditions, should be refactored to use <c>else if</c> structure. 
+      </statement>
+      <feedback>
+             Correct! 
+      </feedback>
+    </choice>
+    
+    <choice correct="yes">
+      <statement> 
+       if we have sequential <c>if</c> statements where each statement prints a message, and conditions are NOT mutually exclusive, multiple <c>if</c> conditions may evaluate to <c>true</c> in one run. 
+      </statement>
+      <feedback>
+        <p>
+             Correct! 
+        </p>
+      </feedback>
+    </choice>
+         </choices>
+ </activity> 
+
+
+
+
+  <activity label="exclusiveConditions" >
+ <statement>
+      <p>
+       Which of the following options indicates sequential if statements with exclusive conditions? 
+     </p>
+
+
+  	<p>
+      Select all that apply. 
+    </p> 
+  </statement>
+
+
+  <choices>
+    <choice correct="no">
+      <statement> 
+        <program language="java">
+          <input>
+if (x > 0) {
+	System.out.println("Positive");
+}
+if (x % 2 == 0) {
+	System.out.println("Even");
+}
+
+          </input>
+        </program>
+      </statement>
+      <feedback>
+
+             No they are not! for any even number > 0 both conditions evaluate to ture and both messages will be printed. For example for x == 10. 
+
+      </feedback>
+    </choice>
+    
+     <choice correct="yes">
+      <statement> 
+               <program language="java">
+          <input>
+if (x > 10) {
+	System.out.println("higher than 10");
+}
+if (x &lt; 0) {
+	System.out.println("less than 0");
+}
+
+          </input>
+        </program>
+      </statement>
+      <feedback>
+        <p>
+             Correct! At a single run, x can NOT be both higher than 10 and less than 0!
+        </p>
+      </feedback>
+    </choice>
+    
+    <choice correct="yes">
+      <statement> 
+       <program language="java">
+          <input>
+if (x % 2 == 1) {
+	System.out.println("Odd");
+}
+if (x % 2 == 0) {
+	System.out.println("Even");
+}
+
+          </input>
+        </program>
+      </statement>
+      <feedback>
+             Correct! x can NOT be both odd and even in a single run.  
+      </feedback>
+    </choice>
+    
+    <choice correct="no">
+      <statement> 
+      <program language="java">
+          <input>
+if (x > 0) {
+	System.out.println("X is positive");
+}
+if (y &lt;= 0) {
+	System.out.println("Y is not positive");
+}
+
+          </input>
+        </program>
+      </statement>
+      <feedback>
+        <p>
+             One condition checks the value of x and the other checks y and for (x == 10 and y == -2) both conditions can evaluate to true.
+        </p>
+      </feedback>
+    </choice>
+         </choices>
+ </activity> 
+ 
  
  
    <exercise label="exp-conjoinWithOr-fillinCanPlayOutside">
       	
       	<statement>
       <p>
-       We want the canPlayOutside() function to take a String weather and prints some messages. If the weather equals "Sunny" the function prints, "You can play outside!". Similarly, when the weather is "Cloudy" the function prints "You can play outside!". However, if the weather is "Windy", it prints, "you should play inside!".
+       We want the canPlayOutside() function to take a String parameter, weather, and print some messages. If the weather equals "sunny" the function prints, "You can play outside!". Similarly, when the weather is "cloudy" the function prints "You can play outside!". However, if the weather is "windy", it prints, "you should play inside!".
+To compare two String values, use equals() method. 
      </p>
     </statement>
 
@@ -30,9 +190,9 @@
 public static void canPlayOutside(String weather) {
 	if (.........blank1...............) {
            System.out.println(“You can play outside!”);
-      } ....blank2..... {
+    } .......blank2....... {
            System.out.println(“You should play inside!”);
-      }
+    }
  }   
    
 
@@ -53,7 +213,7 @@ public static void canPlayOutside(String weather) {
 
       <setup>
           	<var>
-		        <condition case="insensitive" string="( *weather.equals\(&quot;Sunny&quot;\) *\|\| *weather.equals\(&quot;Cloudy&quot;\) *$)|( *weather.equals\(&quot;Cloudy&quot;\) *\|\| *weather.equals\(&quot;Sunny&quot;\) *$)">
+		        <condition case="insensitive" string="( *weather.equals\(&quot;sunny&quot;\) *\|\| *weather.equals\(&quot;cloudy&quot;\) *$)|( *weather.equals\(&quot;cloudy&quot;\) *\|\| *weather.equals\(&quot;sunny&quot;\) *$)">
 		          <feedback>
 					<p>Correct.</p>
 						  </feedback>
@@ -61,12 +221,12 @@ public static void canPlayOutside(String weather) {
 						
 						<condition string=".*">
 						  <feedback>
-					<p>Try again!</p>
+					<p>Try again! Make sure to use equals() method to compare two string values. Also the task is case-sensitive.  </p>
 		          </feedback>
 		        </condition>
           </var>
 	  <var>
-            <condition case="insensitive" string=" *else if *\( *weather.equals\( *&quot;Windy&quot; *\) *\)">
+            <condition case="insensitive" string=" *else if *\( *weather.equals\( *&quot;windy&quot; *\) *\)">
               <feedback>
 				<p>Correct.</p>
 				      </feedback>
