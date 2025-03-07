@@ -19,7 +19,7 @@
 <activity label="exp-conjoinWithOr-fillinGuessGame">
   <statement>
     <p>
-     Consider the following two functions (guessGame1 and guessGame2). For which input(s) these code blocks show different behavior?  
+     Consider the following two functions (guessGame1() and guessGame2()). For which input(s) these functions show different behavior?  
     </p>
     <program language="java">
       <input>
@@ -125,7 +125,7 @@ public static void guessGame2(int number) {
     
      <choice correct="yes">
       <statement> 
-               The functionality and execution of sequential <c>if</c> statements with a body that involves return statements is the same as an <c>if-else if </c>structure.
+               The functionality and execution of sequential <c>if</c> statements that involves return statements in their body is the same as an <c>if-else if </c>structure.
       </statement>
       <feedback>
         <p>

@@ -30,7 +30,8 @@
   <choices>
     <choice correct="no">
       <statement> 
-        We can always conjoin the conditions of sequential <c>if</c> statements with the same body using <c>||</c>.
+        To refactor sequential <c>if</c> statements, when they have the same body, we can always conjoin their conditions using <c>||</c>.
+
       </statement>
       <feedback>
 
@@ -78,7 +79,7 @@
   <activity label="exclusiveConditions" >
  <statement>
       <p>
-       Which of the following options indicates sequential if statements with exclusive conditions? 
+       Which of the following options indicates sequential <c>if</c> statements with exclusive conditions? 
      </p>
 
 
@@ -105,7 +106,7 @@ if (x % 2 == 0) {
       </statement>
       <feedback>
 
-             No they are not! for any even number > 0 both conditions evaluate to ture and both messages will be printed. For example for x == 10. 
+             No they are not exclusive! for any even number > 0 both conditions evaluate to ture and both messages will be printed. For example for x == 10. 
 
       </feedback>
     </choice>

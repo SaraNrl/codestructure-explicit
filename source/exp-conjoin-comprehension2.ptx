@@ -6,7 +6,7 @@
 <activity label="exp-conjoinAnd-comprehensionEventEligibility">
   <statement>
     <p>
-      Determine which of the following code blocks have the same functionality as the given code block (i.e., they produce the same output for the same inputs). Please click on the <term role="bold">Hint </term> after answering the question.
+      Look at the first code block, which of the following options has the same functionality with it (i.e., they produce the same output for the same inputs)? 
     </p>
     <program language="java">
       <input>
@@ -71,7 +71,7 @@
       </statement>
       <feedback>
         <p>
-          Correct! The else statement in the original code was unnecessary and could be removed. See the truth table in the hint.   
+          Correct! The else statement in the original code was unnecessary and could be removed. Click on the Hint to see the truth table.   
          </p>
          </feedback>
     </choice>

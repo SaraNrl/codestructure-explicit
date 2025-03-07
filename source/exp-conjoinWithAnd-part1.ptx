@@ -100,7 +100,7 @@ public static String message(int age, boolean didConsent) {
           </var>
           
           <var>
-		      <condition case="sensitive" string="Sorry, you cannot participate">
+		      <condition case="sensitive" string="&quot;Sorry, you cannot participate&quot;">
 		          <feedback>
 					<p>Correct.</p>
 						  </feedback>
