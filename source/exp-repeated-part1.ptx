@@ -5,7 +5,7 @@
 
   <title>Rule 3) Remove repeated code and logic from conditional branches </title>
   <p>
-  Please watch the video to learn about the third rule (remove repeated code from conditional branches) and then answer the following questions. Enlarge the window to view the code examples clearly. If needed, click the settings icon in the video player and set the quality to 1080p for better clarity.
+Please watch the video to learn about the third rule (removing repeated code from conditional branches) and then answer the following questions. Enlarge the window to view the code examples clearly. If needed, click the settings icon in the video player and set the quality to 1080p for better clarity.
   </p>
   <figure>
     <caption>Remove repeated code from branches part 1 </caption>
@@ -20,7 +20,7 @@
 <activity label="exp-uniqueRepeated1-videoCheckPoint"> 
   <statement>
     <p>
-      For the code example that was discussed in the video, applying which of the following rule(s) resulted in removing the repeated code from conditional branches?
+     For the code example discussed in the video, applying which of the following rule(s) resulted in removing the repeated code from the conditional branches?
     </p>
     
 
@@ -35,7 +35,7 @@
   
     <choice correct="no">
       <statement> 
-       Conjoining conditions with &amp;&amp; operator
+       Conjoining conditions with the &amp;&amp; operator
       </statement>
       <feedback>
         <p>
@@ -46,7 +46,7 @@
 
     <choice correct="yes">
       <statement> 
-       Conjoining conditions with || operator
+       Conjoining conditions with the || operator
       </statement>
       <feedback>
         <p>
@@ -69,7 +69,7 @@
  
  <choice correct="no">
       <statement> 
-      We could not apply any of the rules we learned so far.  
+      None of the rules we've learned so far could be applied 
       </statement>
       <feedback>
         <p>

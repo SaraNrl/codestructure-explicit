@@ -5,7 +5,7 @@
 
   <title>Rule 1) Conjoining Conditions </title>
   <p>
-    Continue watching the video to learn when to conjoin conditions with || and answer the following questions.
+    Continue watching the video to learn when to conjoin conditions with ||, then answer the following questions.
   </p>
   <figure>
     <caption>Conjoining conditions with <c>||</c> part 3</caption>
@@ -19,7 +19,7 @@
 <activity label="exp-conjoinWithOr-fillinGuessGame">
   <statement>
     <p>
-     Consider the following two functions (guessGame1() and guessGame2()). For which input(s) these functions show different behavior?  
+     Consider the following two functions (guessGame1() and guessGame2()). For which input(s) do these functions show different behavior?  
     </p>
     <program language="java">
       <input>
@@ -114,18 +114,18 @@ public static void guessGame2(int number) {
   <choices>
     <choice correct="yes">
       <statement> 
-        We can conjoin the conditions of sequential <c>if</c> statements with the same body that includes return statements using <c>||</c>.
+        We can conjoin the conditions of sequential <c>if</c> statements with the same body containing a <c>return</c> statement using <c>||</c>.
       </statement>
       <feedback>
 
-             Correct! If the body of <c>if</c> statements involve <c>return</c> statements, regardless of whether conditions are exclusive or not, we can conjoin conditions.  
+             Correct! If the body of <c>if</c> statements involve <c>return, break or continue</c> statements, regardless of whether conditions are exclusive or not, we can conjoin conditions.  
 
       </feedback>
     </choice>
     
      <choice correct="yes">
       <statement> 
-               The functionality and execution of sequential <c>if</c> statements that involves return statements in their body is the same as an <c>if-else if </c>structure.
+     The functionality and execution of sequential <c>if</c> statements that contain <c>return</c> statements in their bodies are the same as <c>if-else if</c> structure.
       </statement>
       <feedback>
         <p>
@@ -135,7 +135,7 @@ public static void guessGame2(int number) {
     </choice>
       <choice correct="no">
       <statement> 
-               We can conjoin the conditions of sequential <c>if</c> statements with the same body that includes print statements using <c>||</c>.
+    We can always conjoin the conditions of sequential <c>if</c> statements with the same body that includes print statements using <c>||</c>.
       </statement>
       <feedback>
         <p>

@@ -42,7 +42,7 @@
     
      <choice correct="yes">
       <statement> 
-               We can conjoin the conditions of sequential <c>if</c> statements with the same body using <c>||</c> when those conditions are exclusive.
+               We can conjoin the conditions of sequential if statements with the same body using <c>||</c> when those conditions are exclusive.
       </statement>
       <feedback>
         <p>
@@ -53,7 +53,7 @@
     
     <choice correct="yes">
       <statement> 
-       Sequential <c>if</c> statements with mutually exclusive conditions, should be refactored to use <c>else if</c> structure. 
+       Sequential if statements with mutually exclusive conditions, can be refactored to use <c>else if</c> structure and when their body is also the same, they can be conjoined using <c>||</c>.
       </statement>
       <feedback>
              Correct! 
@@ -62,7 +62,7 @@
     
     <choice correct="yes">
       <statement> 
-       if we have sequential <c>if</c> statements where each statement prints a message, and conditions are NOT mutually exclusive, multiple <c>if</c> conditions may evaluate to <c>true</c> in one run. 
+       if we have sequential if statements where each statement prints a message, and conditions are NOT mutually exclusive, multiple if conditions may evaluate to true in one run. 
       </statement>
       <feedback>
         <p>
@@ -79,7 +79,7 @@
   <activity label="exclusiveConditions" >
  <statement>
       <p>
-       Which of the following options indicates sequential <c>if</c> statements with exclusive conditions? 
+       Which of the following options indicates sequential if statements with exclusive conditions? 
      </p>
 
 
@@ -115,11 +115,14 @@ if (x % 2 == 0) {
       <statement> 
                <program language="java">
           <input>
-if (x > 10) {
-	System.out.println("higher than 10");
+if (x >= 10) {
+	System.out.println("High");
+}
+if (x >= 0 &amp;&amp; x &lt; 10) {
+	System.out.println("Middle");
 }
 if (x &lt; 0) {
-	System.out.println("less than 0");
+	System.out.println("Low");
 }
 
           </input>
@@ -127,7 +130,7 @@ if (x &lt; 0) {
       </statement>
       <feedback>
         <p>
-             Correct! At a single run, x can NOT be both higher than 10 and less than 0!
+             Correct! At a single run, x can only be High or Middle or Low.
         </p>
       </feedback>
     </choice>

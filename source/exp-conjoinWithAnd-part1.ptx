@@ -5,11 +5,11 @@
 
   <title>Rule 1) Conjoining Conditions </title>
   <p>
-  Please watch the video to learn when to conjoin conditions with &amp;&amp; and answer the following questions. Enlarge the window to view the code examples clearly. If needed, click the settings icon in the video player and set the quality to 1080p for better clarity. 
+  Please watch the video to learn when to conjoin conditions with &amp;&amp;, then answer the following questions. Enlarge the window to view the code examples clearly. If needed, click the settings icon in the video player and set the quality to 1080p for better clarity. 
   </p>
   <figure>
     <caption>Conjoining conditions with <c>&amp;&amp;</c> part 1</caption>
-    <video xml:id="conjoinWithAnd1" youtube="MBYjpKKTrtY" width="90%" margins="5% 5%" preview="conjoinWithAnd-part1" />
+    <video xml:id="conjoinWithAnd1" youtube="nI5Hb_LkMLU" width="90%" margins="5% 5%" preview="conjoinWithAnd-part1" />
   </figure>
  
  
@@ -19,7 +19,7 @@
 <exercise label="conjoinWithAnd-fillinMessage">
   <statement>
     <p>
-     Consider the following Java function and complete the blank parts of the truth table.
+     Consider the following Java function and fill in the blank parts in the truth table.
     </p>
     <program language="java">
       <input>
@@ -100,12 +100,13 @@ public static String message(int age, boolean didConsent) {
           </var>
           
           <var>
-		      <condition case="sensitive" string="&quot;Sorry, you cannot participate&quot;">
+		     <condition case="sensitive" string="(Sorry, you cannot participate)|(&quot;Sorry, you cannot participate&quot;)">
+				
 		          <feedback>
 					<p>Correct.</p>
 						  </feedback>
 						</condition>
-					
+
 						<condition string=".*">
 						  <feedback>
 					<p>Try again!</p>

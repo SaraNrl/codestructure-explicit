@@ -5,7 +5,7 @@
 
   <title>Rule 2) Directly return boolean expressions </title>
   <p>
-  Please watch the video to learn about the second rule (directly return boolean conditions) and answer the following question. Enlarge the window to view the code examples clearly. If needed, click the settings icon in the video player and set the quality to 1080p for better clarity.
+ Please watch the video to learn about the second rule (directly returning boolean conditions) and then answer the following questions. Enlarge the window to view the code examples clearly. If necessary, click the settings icon in the video player and set the quality to 1080p for better clarity.
   </p>
   <figure>
     <caption>Directly return boolean expressions part 1</caption>
@@ -14,10 +14,104 @@
  
  
  
+ 
+ <activity label="exp-booleanReturnPart1-summary">
+  <statement>
+    <p>
+      To which of the following code blocks can we apply Rule 2?
+    </p>
+  </statement>
+
+  <choices>
+    <choice correct="yes">
+      <statement> 
+      <program>
+        <input>
+        <![CDATA[
+       
+				if (condition1) {
+				   return false; 
+				}
+				if (condition2) {
+				   return false; 
+				}
+				return true;
+			
+		
+        ]]>
+        </input>
+      </program>
+      </statement> 
+      <feedback>
+      <p>
+      We can conjoin the if conditions together using <c>||</c> and then we have an if statement that always returns true in some senarios and false in other senarios. So, we can apply rule 2 and directly return the negation of conjoined conditions. (In the next video you will see how) 
+      </p>
+      </feedback>
+    </choice>
+    
+    <choice correct="no">
+      <statement> 
+        <program>
+        <input>
+        <![CDATA[
+       
+				if (condition1) {
+				   return false; 
+				}
+			
+		
+        ]]>
+        </input>
+      </program>
+      </statement>
+      <feedback>
+      <p>
+      No, the if statement only returns false.
+      </p>
+      </feedback>
+    </choice>
+    
+    <choice correct="yes">
+      <statement> 
+       <program>
+        <input>
+        <![CDATA[
+boolean flag = true;
+if (condition1 && condition2 || condition3) {
+   return flag; 
+}
+return false;
+			
+		
+        ]]>
+        </input>
+      </program>
+      </statement> 
+      
+      <feedback>
+      <p>
+      Yes. the if condition returns boolean variable true when the condition evaluates to true and returns false otherwise. So, we can apply rule 2 and directly return the if condition.  
+      </p>
+      </feedback>
+    </choice>
+  </choices>
+</activity>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  <exercise label="exp-BooleanReturn-fillinAreEqualStrings">
 
     <statement> 
-<p> The function<c> areStringsEqual()</c> takes two String inputs and returns a boolean. Complete the function by filling in the blanks so that when <term role="bold"> the two Strings are the same </term> it returns true. Otherwise, it returns false. You can compare String values using equals() method.
+<p> The function <c>areStringsEqual()</c> takes two String inputs and returns a boolean. Complete the function by filling in the blanks so that when <term role="bold"> the two Strings are the same </term> it returns true. Otherwise, it returns false. You can compare String values using <c>equals()</c> method.
        </p>
     
 		<program language="java" >

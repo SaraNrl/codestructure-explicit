@@ -5,7 +5,7 @@
 
   <title>Rule 1) Conjoining Conditions </title>
   <p>
-  Please watch the video to learn when to conjoin conditions with || and answer the following questions. 
+  Please watch the video to learn when to conjoin conditions with || and then answer the following questions. 
   </p>
   <figure>
     <caption>Conjoining conditions with <c>||</c> part 1</caption>
@@ -19,7 +19,7 @@
 <activity label="exp-conjoinWithOr-comprehensionPrint1">
   <statement>
     <p>
-     Consider the following Java function. What happens when the function is called with the given inputs: <c>print(2, 0, 0);</c>
+     Consider the following Java function. What happens when the function is called with the given inputs <c>print(2, 0, 0);</c>?
     </p>
     <program language="java">
       <input>
@@ -37,7 +37,7 @@ public static void print(int x, int y, int z) {
   <choices>
     <choice correct="no">
       <statement> 
-        <p>The code first prints "Condition met" and then it prints "End of program" </p>
+        <p>The code first prints "Condition met" and then prints "End of program" </p>
       </statement> 
        <feedback>
       Think about what you learned for short circuit evaluation from the video
@@ -68,14 +68,14 @@ public static void print(int x, int y, int z) {
 <activity label="exp-conjoinWithOr-comprehensionPrint2">
   <statement>
     <p>
-      What happens when the function is called with these new inputs: <c>print(12, 0, 20);</c>
+      What happens when the function is called with these new inputs <c>print(12, 0, 20);</c>?
     </p>
   </statement>
 
   <choices>
     <choice correct="yes">
       <statement> 
-        <p>The code first prints "Condition met" and then it prints "End of program" </p>
+        <p>The code first prints "Condition met" and then prints "End of program" </p>
       </statement>
        <feedback>
       Correct! The first condition is true, the program doesn't bother checking the rest of the conjoined conditions and considers the whole as true.  

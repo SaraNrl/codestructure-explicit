@@ -15,7 +15,7 @@
  <activity label="exp-conjoinWithOr-refactoringInternship">
   <statement>
     <p>
-      There is a copy of the following code block in an interactive mode that you can compile. Your task is to improve the code's style as an expert would view it, while ensuring its behavior remains unchanged. You may run your refactored code to verify that it still passes all test cases.
+     There is a copy of the following code block in interactive mode that you can compile. Your task is to improve the code's style as an expert would view it, while ensuring its behavior remains unchanged. You may run your refactored code to verify that it still passes all test cases.
     </p>
     <program language="java">
       <input>
@@ -24,13 +24,13 @@ public class Internship {
 		if (schoolYear >= 4) {
 			if (GPA >= 3.5) {
 		    	if (hasWorkExperience) {
-		        	return "Eligible for Internship";
+		        	return "Eligible";
 		    	} else {
 		        	return "You only need some work experience!";
 		    	}
 			}
 		}
-		return "Not eligible for Internship";
+		return "Not eligible";
 	}
 }
 
@@ -45,13 +45,13 @@ public class Internship {
 		if (schoolYear >= 4) {
 			if (GPA >= 3.5) {
 		    	if (hasWorkExperience) {
-		        	return "Eligible for Internship";
+		        	return "Eligible";
 		    	} else {
 		        	return "You only need some work experience!";
 		    	}
 			}
 		}
-		return "Not eligible for Internship";
+		return "Not eligible";
 	}
 }
     </input>
@@ -71,7 +71,7 @@ public class Internship {
       public void testEligibleBySchoolYear() throws IOException {
           Object[] args = {4,3.5,true};  // Arguments for the method, year and gpa
           String output = getMethodOutput("checkInternshipEligibility", args);
-          String expect = "Eligible for Internship";
+          String expect = "Eligible";
           
           boolean passed = getResults(expect, output, "checkInternshipEligibility(4,3.5,true)");
           assertTrue(passed);
@@ -82,7 +82,7 @@ public class Internship {
       public void testEligibleByGpa() throws IOException {
           Object[] args = {4, 2.5,true};  // Arguments for the method
           String output = getMethodOutput("checkInternshipEligibility", args);
-          String expect = "Not eligible for Internship";
+          String expect = "Not eligible";
           
           boolean passed = getResults(expect, output, "checkInternshipEligibility(4, 2.5, true)");
           assertTrue(passed);
@@ -93,7 +93,7 @@ public class Internship {
       public void testNotEligibleForYear() throws IOException {
           Object[] args = {2, 3.7, true};  // Arguments for the method
           String output = getMethodOutput("checkInternshipEligibility", args);
-          String expect = "Not eligible for Internship";
+          String expect = "Not eligible";
           
           boolean passed = getResults(expect, output, "checkInternshipEligibility(2, 3.7, true)");
           assertTrue(passed);
@@ -115,7 +115,7 @@ public class Internship {
       public void testEligibleByGpaAndYear() throws IOException {
           Object[] args = {2, 3.2, true};  // Arguments for the method
           String output = getMethodOutput("checkInternshipEligibility", args);
-          String expect = "Not eligible for Internship";
+          String expect = "Not eligible";
           
           boolean passed = getResults(expect, output, "checkInternshipEligibility(2, 3.2, true)");
           assertTrue(passed);
@@ -125,7 +125,7 @@ public class Internship {
       public void testEligibleByGpaAndExperience() throws IOException {
           Object[] args = {4, 3.2, false};  // Arguments for the method
           String output = getMethodOutput("checkInternshipEligibility", args);
-          String expect = "Not eligible for Internship";
+          String expect = "Not eligible";
           
           boolean passed = getResults(expect, output, "checkInternshipEligibility(4, 3.2, false)");
           assertTrue(passed);
@@ -135,7 +135,7 @@ public class Internship {
       public void testEligibleByExperienceAndYear() throws IOException {
           Object[] args = {3, 3.5, false};  // Arguments for the method
           String output = getMethodOutput("checkInternshipEligibility", args);
-          String expect = "Not eligible for Internship";
+          String expect = "Not eligible";
           
           boolean passed = getResults(expect, output, "checkInternshipEligibility(3, 3.5, false)");
           assertTrue(passed);
@@ -164,11 +164,11 @@ public class Internship {
 public class Internship {
   public static String checkInternshipEligibility(int schoolYear, double GPA, boolean hasWorkExperience) {
     if (schoolYear >= 4 &amp;&amp; GPA >= 3.5 &amp;&amp; hasWorkExperience) {
-      return "Eligible for Internship";
+      return "Eligible";
     } else {
       return "You only need some work experience!";
     }
-    return "Not eligible for Internship";
+    return "Not eligible";
   }
 }
           </input>
@@ -188,9 +188,9 @@ public class Internship {
 public class Internship {
   public static String checkInternshipEligibility(int schoolYear, double GPA, boolean hasWorkExperience) {
     if (schoolYear >= 4 &amp;&amp; GPA >= 3.5 &amp;&amp; hasWorkExperience) {
-      return "Eligible for Internship";
+      return "Eligible";
     }
-    return "Not eligible for Internship";
+    return "Not eligible";
   }
 }
   
@@ -211,10 +211,10 @@ public class Internship {
 public class Internship {
   public static String checkInternshipEligibility(int schoolYear, double GPA, boolean hasWorkExperience) {
     if (schoolYear &lt; 4 || GPA &lt; 3.5) {
-      return "Not eligible for Internship";
+      return "Not eligible";
     }
     if (hasWorkExperience) {
-      return "Eligible for Internship";
+      return "Eligible";
     }
     return "You only need some work experience!";
   }
@@ -238,12 +238,12 @@ public class Internship {
   public static String checkInternshipEligibility(int schoolYear, double GPA, boolean hasWorkExperience) {
     if (schoolYear >= 4 &amp;&amp; GPA >= 3.5) {
       if (hasWorkExperience) {
-        return "Eligible for Internship";
+        return "Eligible";
       } else {
         return "You only need some work experience!";
       }
     }
-  return "Not eligible for Internship";
+  return "Not eligible";
   }
 }
           </input>
