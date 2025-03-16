@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-chapter-title2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title> Do the tasks in order</title>
+	<introduction>
+    <p> Please study all sections <term role="bold">in order.</term></p>
+  </introduction>
+  
+  <!--xi:include href="test.ptx" /-->
+  <xi:include href="Motivation.ptx" />
+  <xi:include href="ApproachingTheBook.ptx" />
+  
+  <xi:include href="exp-conjoinWithAnd-part1.ptx" />
+  <xi:include href="exp-conjoin-comprehension2.ptx" />
+  <xi:include href="exp-conjoinWithAnd-part2.ptx" />
+  <xi:include href="exp-conjoinWithOr-part1.ptx" />
+  <xi:include href="exp-conjoinWithOr-part2.ptx" />
+  <xi:include href="exp-conjoinWithOr-part3.ptx" />
+  <xi:include href="exp-conjoinWithOr-part4.ptx" />
+  <xi:include href="exp-booleanReturn-part1.ptx" />
+  <xi:include href="exp-booleanReturn-part2Exercise.ptx" />
+  
+  <xi:include href="exp-booleanReturn-part2.ptx" />
+  <xi:include href="exp-booleanReturn-part3.ptx" />
+  <xi:include href="exp-booleanReturn3-refactoring.ptx" />
+  
+  <xi:include href="exp-repeated-part1.ptx" />
+  <xi:include href="exp-repeated-part2.ptx" />
+  <xi:include href="exp-repeated-part3.ptx" />
+  <xi:include href="exp-repeated-part4.ptx" />
+</chapter>
