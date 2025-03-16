@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="Motivation" xmlns:xi="http://www.w3.org/2001/XInclude">
-
-  <title>Writing well-structured Code is Very Important </title>
-  <p>
+<title>Writing Well-Structured Code is Very Important</title>
   
+  <p>
+  Programming is not just about writing code that produces the desired output. Code must also be easy to read, understand, and maintain. Well-structured code requires minimal commenting because it speaks for itself.
+  </p>
+  
+  <p>&#160;</p>
+  
+  <p>
+  In the professional world, companies expect developers to follow best practices and write clean and maintainable code. In industry, you won’t be coding just for yourself; you’ll be working in teams. Others need to understand your code to test, modify, and extend it effectively.
+  </p>
+  
+  <p>
+  In addition, research shows that most of the time in software development is spent on reading and understanding existing code. Well-structured code facilitates peer reviews, reduces time spent on future modifications, and simplifies debugging. As software evolves, a clean and organized codebase enables efficient collaboration and minimizes unexpected vulnerabilities.
+  </p>
 
-Programming is not just about writing code that produces the desired output. Code must also be easy to read, understand, and maintain. Well-structured code requires minimal commenting because it speaks for itself.
-<p>&#160;</p>
-In the professional world, companies expect developers to follow best practices and write clean and maintainable code. In industry, you won’t be coding just for yourself; you’ll be working in teams. Others need to understand your code to test, modify, and extend it effectively. 
+  <p>&#160;</p>
+  
+  <p>There are two key ways to achieve well-structured code:</p>
+  
+  <ol>
+    <li>Writing well initially—this involves thinking through different approaches and structures and selecting the best one. However, achieving perfectly structured code initially is difficult.</li>
 
-In addition, research shows that most of the time in software development is spent on reading and understanding existing code. Well-structured code facilitates peer reviews, reduces time spent on future modifications, and simplifies debugging. As software evolves, a clean and organized codebase enables efficient collaboration and minimizes unexpected vulnerabilities.
- <p>&#160;</p>
-There are two key ways to achieve well-structured code:
-<ol>
-<li>Writing well initially---this involves thinking through different approaches and structures and selecting the best one. However, achieving perfectly structured code initially is difficult.</li>
+    <li>Reviewing and refining code for structure—similar to proofreading an essay, where the content remains the same, but sentences are polished for clarity and conciseness, and the overall organization may be adjusted. The process of modifying the structure of code without changing its behavior is called refactoring.</li>
+  </ol>
 
-<li>Reviewing and refining code for structure---similar to proofreading an essay, where the content remains the same, but sentences are polished for clarity and conciseness, and the overall organization may be adjusted. The process of modifying the structure of code without changing its behavior is called refactoring. </li>
-</ol>
-
-Refactoring is the process of enhancing software’s internal structure to make it easier to read and maintain without changing its input-output behavior.
-<p>&#160;</p>
-This short book primarily focuses on refactoring, as it is good practice to regularly review your code and identify areas for improvement. Here, we discuss three refactoring rules, but refactoring extends far beyond what we cover in this course.
-  </p> 
-
-
+  <p>
+  Refactoring is the process of enhancing software’s internal structure to make it easier to read and maintain without changing its input-output behavior.
+  </p>
+  
+  <p>
+  This short book primarily focuses on refactoring, as it is good practice to regularly review your code and identify areas for improvement. Here, we discuss three refactoring rules, but refactoring extends far beyond what we cover in this course.
+  </p>
 
 </section>
-

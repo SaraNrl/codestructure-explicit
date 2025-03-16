@@ -130,7 +130,7 @@ if (x &lt; 0) {
       </statement>
       <feedback>
         <p>
-             Correct! At a single run, x can only be High or Middle or Low.
+             Correct! At a single run, x can only be in one of three ranges: either greater than 10, between 0 and 10 (inclusive) or less than 0.
         </p>
       </feedback>
     </choice>
