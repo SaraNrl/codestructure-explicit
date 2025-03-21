@@ -80,9 +80,9 @@ public void printProductStatus(int quantity) {
 
       <setup>
           	<var>
-		        <condition case="insensitive" string="/s*out of stock/s*">
+		        <condition case="insensitive" string="Out of Stock">
 		          <feedback>
-					<p>Correct! We could initialize status with "Out of stock" instead of an empty string, and then we would not need the else block.</p>
+					<p>Correct.</p>
 						  </feedback>
 						</condition>
 						<condition string=".*">
@@ -91,6 +91,7 @@ public void printProductStatus(int quantity) {
 		          </feedback>
 		        </condition>
           </var>
+          
 	  <var>
             <condition case="insensitive" string=" *&quot;Status: *&quot; *\+ *status *">
               <feedback>

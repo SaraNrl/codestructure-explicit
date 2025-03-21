@@ -134,7 +134,7 @@ public class FinalPrice {
          ]]>
       </input>
 
-      <tests>
+
      	<tests>
      	import static org.junit.Assert.*;
 		import org.junit.Test;
@@ -186,7 +186,7 @@ public class FinalPrice {
           }
 		
 }
-</tests>
+
 
       </tests>
     </program>
@@ -206,7 +206,7 @@ public class FinalPrice {
       <statement> 
        <program language="java">
           <input>
-           <![CDATA[
+<![CDATA[
 public class FinalPrice {
   public static void printDiscount(String itemType, double originalPrice, boolean hasSpecialOffer) {  
     double standardDiscount = 0.15;
@@ -247,6 +247,7 @@ public class FinalPrice {
       <statement> 
        <program language="java">
           <input>
+<![CDATA[
 public class FinalPrice {
     public static void printDiscount(String itemType, double originalPrice, boolean hasSpecialOffer) {  
         double standardDiscount = 0.15;
@@ -274,7 +275,7 @@ public class FinalPrice {
     }
     
 }
-
+]]>
 	
 		</input>
         </program>
@@ -291,6 +292,7 @@ public class FinalPrice {
       <statement> 
        <program language="java">
           <input>
+<![CDATA[
 public class FinalPrice {
     public static void printDiscount(String itemType, double originalPrice, boolean hasSpecialOffer) {  
         String introMessage = "Item: " + itemType + ", Original Price: $" + originalPrice + ". ";
@@ -312,7 +314,7 @@ public class FinalPrice {
     }
 }
 
-	
+]]>	
 		</input>
         </program>
       </statement>
